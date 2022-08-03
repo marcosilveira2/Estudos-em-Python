@@ -57,7 +57,7 @@ class PizzariaDaNonna:
     print(f'Minha pizza custará R${minhaSuperMargerita.preco()}')
 
 def test_pizza():
-    assert minhaSuperMargerita.preco() == 71.5
+    assert PizzariaDaNonna.minhaSuperMargerita.preco() == 71.5
 
 
 if __name__ == '__main__':
