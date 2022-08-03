@@ -1,10 +1,12 @@
 class Pizza:
     
+    
     def preco():
         pass
 
 
 class PizzaDaNonna(Pizza):
+    
 
     def __init__(self, ingredientes):
         self.ingredientes = ingredientes
@@ -16,6 +18,7 @@ class PizzaDaNonna(Pizza):
         return(valor)
 
 class PizzaDecorator(Pizza):
+    
 
     def __init__(self, pizzadecorada):
         self.pizzadecorada = pizzadecorada
