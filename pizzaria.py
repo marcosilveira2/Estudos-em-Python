@@ -47,15 +47,16 @@ class ExtraGrande(PizzaDecorator):
 
 
 class PizzariaDaNonna:
-    ingredientes = {'Massa':10, 
-                    'Muzzarela':20, 
-                    'Tomate':5, 
-                    'Manjericao':5}
+    ingredientes = {'Massa': 10, 
+                    'Muzzarela': 20, 
+                    'Tomate': 5, 
+                    'Manjericao': 5}
     margerita = PizzaDaNonna(ingredientes)
     minhaSuperMargerita = ExtraGrande(BordaRecheada(MassaIntegral(margerita)))
 
     print(f'Minha pizza custará R${minhaSuperMargerita.preco()}')
 
 if __name__ == '__main__':
+
 
     PizzariaDaNonna()
