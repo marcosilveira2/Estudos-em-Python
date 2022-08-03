@@ -1,12 +1,12 @@
 class Pizza:
-    
-    
+
+
     def preco():
         pass
 
 
 class PizzaDaNonna(Pizza):
-    
+
 
     def __init__(self, ingredientes):
         self.ingredientes = ingredientes
@@ -45,9 +45,9 @@ class ExtraGrande(PizzaDecorator):
         return self.pizzadecorada.preco() * 1.3
 
 class PizzariaDaNonna:
-    ingredientes = {'Massa':10,
-                    'Muzzarela':20,
-                    'Tomate':5,
+    ingredientes = {'Massa':10, 
+                    'Muzzarela':20, 
+                    'Tomate':5, 
                     'Manjericao':5}
     margerita = PizzaDaNonna(ingredientes)
     minhaSuperMargerita = ExtraGrande(BordaRecheada(MassaIntegral(margerita)))
